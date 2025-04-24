@@ -54,6 +54,8 @@ class Administracion(Persona):
 
 
 class Menores(Socios):
+    
+    descmenores=models.CharField(max_length=25)
 
     class Meta:
         verbose_name_plural = "Menores"  
@@ -67,6 +69,7 @@ class Comunes(Socios):
 
 class Jubilados(Socios):
     
+    descjubilados=models.CharField(max_length=25)
 
     class Meta:
         verbose_name_plural = "Jubilados"  
